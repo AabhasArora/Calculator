@@ -1,6 +1,6 @@
-/**
- * The Button View. View presents the model and provides
- * the UI events. The controller is attached to these
+/*
+ * The Button View. It presents the model and provides
+ * the UI events such as click from user. The button controller is attached to these
  * events to handle the user interaction.
  */
 function ButtonView(model, element) {

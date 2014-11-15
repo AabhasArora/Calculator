@@ -1,6 +1,6 @@
-/**
- * The Button Controller. Controller responds to user actions and
- * invokes changes on the model.
+/*
+ * The Button Controller. It responds to user actions and
+ * invokes changes on the model and passes the notification to the main controller.
  */
 function ButtonController(model, view) {
     this.model = model;
@@ -14,9 +14,3 @@ function ButtonController(model, view) {
         that.buttonClicked.notify(that.model);
     });
 }
-
-ButtonController.prototype = {
-    // buttonClicked: function () {
-       // this.model.addItem(item);
-    //}
-};

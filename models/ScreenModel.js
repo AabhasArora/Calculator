@@ -1,5 +1,5 @@
-/**
- * The Screen Model. Model stores items and notifies
+/*
+ * The Screen Model. It stores items related to screen and notifies
  * observers about changes.
  */
 function ScreenModel(item) {

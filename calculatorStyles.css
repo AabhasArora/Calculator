@@ -2,12 +2,9 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	
-	/* Better text styling */
 	font: bold 14px Arial, sans-serif;
 }
 
-/* A nice BG gradient */
 html {
 	height: 100%;
 	background: white;
@@ -29,12 +26,10 @@ html {
 	box-shadow: 0px 4px #009de4, 0px 10px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Top portion */
 .top div.clear {
 	float: left;
 }
 
-/* Inset shadow on the screen to create indent */
 .top .screen {
 	height: 40px;
 	width: 252px;
@@ -47,19 +42,17 @@ html {
 	border-radius: 3px;
 	box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
 	
-	/* Typography */
 	font-size: 17px;
 	line-height: 40px;
 	color: white;
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 	text-align: right;
 	letter-spacing: 1px;
+	overflow:hidden;
 }
 
-/* Clear floats */
 .keys, .top {overflow: hidden;}
 
-/* Applying same to the keys */
 .keys div{
 	float: left;
 	position: relative;
@@ -72,23 +65,17 @@ html {
 	
 	background: white;
 	border-radius: 3px;
-	box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 2px rgba(0, 0, 0, 0.2);
 	
 	margin: 0 7px 11px 0;
 	
 	color: #888;
 	line-height: 36px;
 	text-align: center;
-	
-	/* prevent selection of text inside keys */
-	user-select: none;
-	
-	/* Smoothing out hover and active states using css3 transitions */
+
 	transition: all 0.2s ease;
 }
 
-/* Remove right margins from operator keys */
-/* style different type of keys (operators/evaluate/clear) differently */
 .keys div.operator {
 	background: #FFF0F5;
 	margin-right: 0;
@@ -96,47 +83,46 @@ html {
 
 .keys div.eval {
 	background: #f1ff92;
-	box-shadow: 0px 4px #9da853;
+	box-shadow: 0px 2px #9da853;
 	color: #888e5f;
 }
 
 .top div.clear {
 	background: #ff9fa8;
-	box-shadow: 0px 4px #ff7c87;
+	box-shadow: 0px 2px #ff7c87;
 	color: white;
 }
 
 /* Some hover effects */
 .keys div:hover {
 	background: #9c89f6;
-	box-shadow: 0px 4px #6b54d3;
+	box-shadow: 0px 2px #6b54d3;
 	color: white;
 }
 
 .keys div.eval:hover {
 	background: #abb850;
-	box-shadow: 0px 4px #717a33;
+	box-shadow: 0px 2px #717a33;
 	color: #ffffff;
 }
 
 .top div.clear:hover {
 	background: #f68991;
-	box-shadow: 0px 4px #d3545d;
+	box-shadow: 0px 2px #d3545d;
 	color: white;
 }
 
-/* Simulating "pressed" effect on active state of the keys by removing the box-shadow and moving the keys down a bit */
 .keys div:active {
 	box-shadow: 0px 0px #6b54d3;
-	top: 4px;
+	top: 2px;
 }
 
 .keys div.eval:active {
 	box-shadow: 0px 0px #717a33;
-	top: 4px;
+	top: 2px;
 }
 
 .top div.clear:active {
-	top: 4px;
+	top: 2px;
 	box-shadow: 0px 0px #d3545d;
 }

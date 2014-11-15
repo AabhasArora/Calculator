@@ -1,6 +1,6 @@
-/**
- * The Screen Controller. Controller responds to user actions and
- * invokes changes on the model.
+/*
+ * The Screen Controller. It responds to changes from main controller and
+ * invokes changes on the screen model.
  */
 function ScreenController(model, view, mainController) {
     this.model = model;

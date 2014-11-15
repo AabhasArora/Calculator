@@ -1,7 +1,7 @@
 
-/**
- * The Screen View. View presents the model and provides
- * the UI events. The controller is attached to these
+/*
+ * The Screen View. It presents the model and provides
+ * the UI events. Button controller is attached to these
  * events to handle the user interaction.
  */
 function ScreenView(model, element) {

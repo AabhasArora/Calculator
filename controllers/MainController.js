@@ -1,6 +1,6 @@
-/**
- * The Main Controller. Controller responds to user actions and
- * invokes changes on the model.
+/*
+ * The Main Controller. Main Controller responds to user actions from button controller and
+ * passes changes based on computations to screen controller.
  */
 function MainController(arrButtonContoller) {
     this.button = arrButtonContoller;
@@ -39,8 +39,6 @@ MainController.prototype = {
 			else if (model.model.value==="=")
 			{
 				this.processData();
-				//var tempPoped=this.arrValue.pop();
-				//this.arrValue.push({type: model.model.type, value: model.model.value})
 			}
 			else if (model.model.value==="C")
 			{
@@ -49,7 +47,7 @@ MainController.prototype = {
 			}
 			else
 			{
-				this.arrValue.push({type: model.model.type, value: model.model.value})
+				this.arrValue.push({type: model.model.type, value: model.model.value});
 			}
 		}
 		

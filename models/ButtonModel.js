@@ -1,5 +1,5 @@
-/**
- * The Button Model. Model stores items and notifies
+/*
+ * The Button Model. It stores items related to button and notifies
  * observers about changes.
  */
 function ButtonModel(item) {
@@ -15,14 +15,5 @@ ButtonModel.prototype = {
 		value: this.value,
 		type: this.type
 		}
-    }//,
-	// fetchButtonClickedValue: function (item) {
-        // return {
-		// value: this.value,
-		// type: this.type
-		// }
-		// this.buttonClicked.notify({
-            // item: item
-        // });
-    // }
+    }
 };
